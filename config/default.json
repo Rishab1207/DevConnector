@@ -1,3 +1,4 @@
 {
-  "mongoURI": "mongodb+srv://dev:rishab@1@cluster0.skoix.mongodb.net/developers?retryWrites=true&w=majority"
+  "mongoURI": "mongodb+srv://dev:rishab@1@cluster0.skoix.mongodb.net/developers?retryWrites=true&w=majority",
+  "jwtSecret": "mysecrettoken"
 }

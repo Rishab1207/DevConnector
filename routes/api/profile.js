@@ -30,13 +30,30 @@ router.post(
   "/",
   [
     auth,
-    body("status", "Status is required").not().isEmpty(),
-    body("skills", "Skills is required").not().isEmpty(),
+    [
+      body("status", "Status is required").not().isEmpty(),
+      body("skills", "Skills is required").not().isEmpty(),
+    ],
   ],
   async (req, res) => {
     const errors = validationResult(req);
     if (!errors.isEmpty())
       return res.status(400).json({ errors: errors.array() });
+
+    const {
+      company,
+      website,
+      location,
+      bio,
+      status,
+      githubusername,
+      skills,
+      youtube,
+      facebook,
+      twitter,
+      instagram,
+      linkedin,
+    } = req.body;
   }
 );
 

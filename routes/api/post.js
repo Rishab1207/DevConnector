@@ -3,7 +3,7 @@ const { body, validationResult } = require("express-validator");
 const router = express.Router();
 const auth = require("../../middleware/auth");
 const Post = require("../../models/Post");
-const Proife = require("../../models/Profile");
+const Profile = require("../../models/Profile");
 const User = require("../../models/User");
 
 // @route   POST api/post
